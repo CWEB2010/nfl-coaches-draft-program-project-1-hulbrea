@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Brenna Hull
+//CWEB2010 Project 1
+
+using System;
 
 namespace project1
 {
