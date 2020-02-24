@@ -73,7 +73,7 @@ namespace project1
             //Tight Ends
             Player player26 = new Player("Cole Kmet", "(Notre Dame)", 27800900, 1);
 
-            Player player27 = new Player("Brycen Hopkinds", "(Purdue)", 21000800, 2);
+            Player player27 = new Player("Brycen Hopkins", "(Purdue)", 21000800, 2);
 
             Player player28 = new Player("Hunter Bryant", "(Washington)", 17499233, 3);
 
@@ -131,7 +131,7 @@ namespace project1
 
             long moneySpent = 0;
             string formattedMoneySpent = moneySpent.ToString("C0", CultureInfo.CurrentCulture);
-
+            int totalRanking = 0;
 
             for (int i = 1; i <= 5; i++)
             {
@@ -140,244 +140,285 @@ namespace project1
                     Console.WriteLine($"Please select choice number {i} or type quit or exit to get your total: ");
                     string name = Console.ReadLine();
                     
+
                     if (name == "Burrow")
                     {
                         moneyRemaining = moneyRemaining - player1.playerCost;
                         moneySpent = moneySpent + player1.playerCost;
+                        totalRanking = totalRanking + player1.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Tagovailoa")
                     {
                         moneyRemaining = moneyRemaining - player2.playerCost;
                         moneySpent = moneySpent + player2.playerCost;
+                        totalRanking = totalRanking + player2.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Herbert")
                     {
                         moneyRemaining = moneyRemaining - player3.playerCost;
                         moneySpent = moneySpent + player3.playerCost;
+                        totalRanking = totalRanking + player3.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Love")
                     {
                         moneyRemaining = moneyRemaining - player4.playerCost;
                         moneySpent = moneySpent + player4.playerCost;
+                        totalRanking = totalRanking + player4.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Fromm")
                     {
                         moneyRemaining = moneyRemaining - player5.playerCost;
                         moneySpent = moneySpent + player5.playerCost;
+                        totalRanking = totalRanking + player5.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Swift")
                     {
                         moneyRemaining = moneyRemaining - player6.playerCost;
                         moneySpent = moneySpent + player6.playerCost;
+                        totalRanking = totalRanking + player6.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Taylor")
                     {
                         moneyRemaining = moneyRemaining - player7.playerCost;
                         moneySpent = moneySpent + player7.playerCost;
+                        totalRanking = totalRanking + player7.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Dobbins")
                     {
                         moneyRemaining = moneyRemaining - player8.playerCost;
                         moneySpent = moneySpent + player8.playerCost;
+                        totalRanking = totalRanking + player8.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Moss")
                     {
                         moneyRemaining = moneyRemaining - player9.playerCost;
                         moneySpent = moneySpent + player9.playerCost;
+                        totalRanking = totalRanking + player9.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Akers")
                     {
                         moneyRemaining = moneyRemaining - player10.playerCost;
                         moneySpent = moneySpent + player10.playerCost;
+                        totalRanking = totalRanking + player10.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Lamb")
                     {
                         moneyRemaining = moneyRemaining - player11.playerCost;
                         moneySpent = moneySpent + player11.playerCost;
+                        totalRanking = totalRanking + player11.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Jeudy")
                     {
                         moneyRemaining = moneyRemaining - player12.playerCost;
                         moneySpent = moneySpent + player12.playerCost;
+                        totalRanking = totalRanking + player12.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Higgins")
                     {
                         moneyRemaining = moneyRemaining - player13.playerCost;
                         moneySpent = moneySpent + player13.playerCost;
+                        totalRanking = totalRanking + player13.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Ruggs" | name == "Ruggs III")
                     {
                         moneyRemaining = moneyRemaining - player14.playerCost;
                         moneySpent = moneySpent + player14.playerCost;
+                        totalRanking = totalRanking + player14.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Johnson")
                     {
                         moneyRemaining = moneyRemaining - player15.playerCost;
                         moneySpent = moneySpent + player15.playerCost;
+                        totalRanking = totalRanking + player15.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Young")
                     {
                         moneyRemaining = moneyRemaining - player16.playerCost;
                         moneySpent = moneySpent + player16.playerCost;
+                        totalRanking = totalRanking + player16.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Brown")
                     {
                         moneyRemaining = moneyRemaining - player17.playerCost;
                         moneySpent = moneySpent + player17.playerCost;
+                        totalRanking = totalRanking + player17.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Epensa")
                     {
                         moneyRemaining = moneyRemaining - player18.playerCost;
                         moneySpent = moneySpent + player18.playerCost;
+                        totalRanking = totalRanking + player18.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Kinlaw")
                     {
                         moneyRemaining = moneyRemaining - player19.playerCost;
                         moneySpent = moneySpent + player19.playerCost;
+                        totalRanking = totalRanking + player19.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Gross-Matos" | name == "Matos" | name == "Gross")
                     {
                         moneyRemaining = moneyRemaining - player20.playerCost;
                         moneySpent = moneySpent + player20.playerCost;
+                        totalRanking = totalRanking + player20.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Okudah")
                     {
                         moneyRemaining = moneyRemaining - player21.playerCost;
                         moneySpent = moneySpent + player21.playerCost;
+                        totalRanking = totalRanking + player21.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Delpit")
                     {
                         moneyRemaining = moneyRemaining - player22.playerCost;
                         moneySpent = moneySpent + player22.playerCost;
+                        totalRanking = totalRanking + player22.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Fulton")
                     {
                         moneyRemaining = moneyRemaining - player23.playerCost;
                         moneySpent = moneySpent + player23.playerCost;
+                        totalRanking = totalRanking + player23.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "McKinney")
                     {
                         moneyRemaining = moneyRemaining - player24.playerCost;
                         moneySpent = moneySpent + player24.playerCost;
+                        totalRanking = totalRanking + player24.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Henderson")
                     {
                         moneyRemaining = moneyRemaining - player25.playerCost;
                         moneySpent = moneySpent + player25.playerCost;
+                        totalRanking = totalRanking + player25.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Kmet")
                     {
                         moneyRemaining = moneyRemaining - player26.playerCost;
                         moneySpent = moneySpent + player26.playerCost;
+                        totalRanking = totalRanking + player26.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Hopkins")
                     {
                         moneyRemaining = moneyRemaining - player27.playerCost;
                         moneySpent = moneySpent + player27.playerCost;
+                        totalRanking = totalRanking + player27.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Bryant")
                     {
                         moneyRemaining = moneyRemaining - player28.playerCost;
                         moneySpent = moneySpent + player28.playerCost;
+                        totalRanking = totalRanking + player28.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Pinkney")
                     {
                         moneyRemaining = moneyRemaining - player29.playerCost;
                         moneySpent = moneySpent + player29.playerCost;
+                        totalRanking = totalRanking + player29.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Breeland")
                     {
                         moneyRemaining = moneyRemaining - player30.playerCost;
                         moneySpent = moneySpent + player30.playerCost;
+                        totalRanking = totalRanking + player30.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Simmons")
                     {
                         moneyRemaining = moneyRemaining - player31.playerCost;
                         moneySpent = moneySpent + player31.playerCost;
+                        totalRanking = totalRanking + player31.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Murray")
                     {
                         moneyRemaining = moneyRemaining - player32.playerCost;
                         moneySpent = moneySpent + player32.playerCost;
+                        totalRanking = totalRanking + player32.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Baun")
                     {
                         moneyRemaining = moneyRemaining - player33.playerCost;
                         moneySpent = moneySpent + player33.playerCost;
+                        totalRanking = totalRanking + player33.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Davis-Gaither" | name == "Gaither" | name == "Davis")
                     {
                         moneyRemaining = moneyRemaining - player34.playerCost;
                         moneySpent = moneySpent + player34.playerCost;
+                        totalRanking = totalRanking + player34.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Dye")
                     {
                         moneyRemaining = moneyRemaining - player35.playerCost;
                         moneySpent = moneySpent + player35.playerCost;
+                        totalRanking = totalRanking + player35.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Wills Jr." | name == "Wills")
                     {
                         moneyRemaining = moneyRemaining - player36.playerCost;
                         moneySpent = moneySpent + player36.playerCost;
+                        totalRanking = totalRanking + player36.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Thomas")
                     {
                         moneyRemaining = moneyRemaining - player37.playerCost;
                         moneySpent = moneySpent + player37.playerCost;
+                        totalRanking = totalRanking + player37.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Wirfs")
                     {
                         moneyRemaining = moneyRemaining - player38.playerCost;
                         moneySpent = moneySpent + player38.playerCost;
+                        totalRanking = totalRanking + player38.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Bladasz")
                     {
                         moneyRemaining = moneyRemaining - player39.playerCost;
                         moneySpent = moneySpent + player39.playerCost;
+                        totalRanking = totalRanking + player39.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "Becton")
                     {
                         moneyRemaining = moneyRemaining - player40.playerCost;
                         moneySpent = moneySpent + player40.playerCost;
+                        totalRanking = totalRanking + player40.playerRanking;
                         Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
                     }
                     else if (name == "")
@@ -395,6 +436,14 @@ namespace project1
                 }else if (moneyRemaining < 10000100)
                 {
                     Console.WriteLine("Sorry, you have exceeded the limit.");
+                }
+                if ((totalRanking == 3 | totalRanking == 4 | totalRanking == 5 | totalRanking == 6) && moneyRemaining >= 30000000 && i >= 3)
+                {
+                    Console.WriteLine("\n==Cost Effective==");
+                }
+                else
+                {
+                    Console.WriteLine();
                 }
 
                 Console.WriteLine("");
