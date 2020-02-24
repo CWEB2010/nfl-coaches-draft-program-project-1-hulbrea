@@ -123,182 +123,286 @@ namespace project1
             Console.WriteLine($"Offensive Tackles:\n\n\t {player36} | {player37} | {player38} | {player39} | {player40}");
             Console.WriteLine("\n");
 
+            Console.WriteLine("==========================================================================================================================\n");
+            Console.WriteLine("To select a player, enter their last name.\n");
+            
             long moneyRemaining = 95000000;
             string formattedMoneyRemaining = moneyRemaining.ToString("C0", CultureInfo.CurrentCulture);
-           
+
+            long moneySpent = 0;
+            string formattedMoneySpent = moneySpent.ToString("C0", CultureInfo.CurrentCulture);
+
+
             for (int i = 1; i <= 5; i++)
             {
-                Console.WriteLine($"Please select choice number {i} by entering the player's last name");
-                string name = Console.ReadLine();
-                if (name == "Burrow")
+                if (moneyRemaining > 0)
                 {
-                    moneyRemaining = moneyRemaining - player1.playerCost;
-                }
-                else if (name == "Tagovailoa")
+                    Console.WriteLine($"Please select choice number {i} or type quit or exit to get your total: ");
+                    string name = Console.ReadLine();
+                    
+                    if (name == "Burrow")
+                    {
+                        moneyRemaining = moneyRemaining - player1.playerCost;
+                        moneySpent = moneySpent + player1.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Tagovailoa")
+                    {
+                        moneyRemaining = moneyRemaining - player2.playerCost;
+                        moneySpent = moneySpent + player2.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Herbert")
+                    {
+                        moneyRemaining = moneyRemaining - player3.playerCost;
+                        moneySpent = moneySpent + player3.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Love")
+                    {
+                        moneyRemaining = moneyRemaining - player4.playerCost;
+                        moneySpent = moneySpent + player4.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Fromm")
+                    {
+                        moneyRemaining = moneyRemaining - player5.playerCost;
+                        moneySpent = moneySpent + player5.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Swift")
+                    {
+                        moneyRemaining = moneyRemaining - player6.playerCost;
+                        moneySpent = moneySpent + player6.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Taylor")
+                    {
+                        moneyRemaining = moneyRemaining - player7.playerCost;
+                        moneySpent = moneySpent + player7.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Dobbins")
+                    {
+                        moneyRemaining = moneyRemaining - player8.playerCost;
+                        moneySpent = moneySpent + player8.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Moss")
+                    {
+                        moneyRemaining = moneyRemaining - player9.playerCost;
+                        moneySpent = moneySpent + player9.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Akers")
+                    {
+                        moneyRemaining = moneyRemaining - player10.playerCost;
+                        moneySpent = moneySpent + player10.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Lamb")
+                    {
+                        moneyRemaining = moneyRemaining - player11.playerCost;
+                        moneySpent = moneySpent + player11.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Jeudy")
+                    {
+                        moneyRemaining = moneyRemaining - player12.playerCost;
+                        moneySpent = moneySpent + player12.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Higgins")
+                    {
+                        moneyRemaining = moneyRemaining - player13.playerCost;
+                        moneySpent = moneySpent + player13.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Ruggs" | name == "Ruggs III")
+                    {
+                        moneyRemaining = moneyRemaining - player14.playerCost;
+                        moneySpent = moneySpent + player14.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Johnson")
+                    {
+                        moneyRemaining = moneyRemaining - player15.playerCost;
+                        moneySpent = moneySpent + player15.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Young")
+                    {
+                        moneyRemaining = moneyRemaining - player16.playerCost;
+                        moneySpent = moneySpent + player16.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Brown")
+                    {
+                        moneyRemaining = moneyRemaining - player17.playerCost;
+                        moneySpent = moneySpent + player17.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Epensa")
+                    {
+                        moneyRemaining = moneyRemaining - player18.playerCost;
+                        moneySpent = moneySpent + player18.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Kinlaw")
+                    {
+                        moneyRemaining = moneyRemaining - player19.playerCost;
+                        moneySpent = moneySpent + player19.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Gross-Matos" | name == "Matos" | name == "Gross")
+                    {
+                        moneyRemaining = moneyRemaining - player20.playerCost;
+                        moneySpent = moneySpent + player20.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Okudah")
+                    {
+                        moneyRemaining = moneyRemaining - player21.playerCost;
+                        moneySpent = moneySpent + player21.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Delpit")
+                    {
+                        moneyRemaining = moneyRemaining - player22.playerCost;
+                        moneySpent = moneySpent + player22.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Fulton")
+                    {
+                        moneyRemaining = moneyRemaining - player23.playerCost;
+                        moneySpent = moneySpent + player23.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "McKinney")
+                    {
+                        moneyRemaining = moneyRemaining - player24.playerCost;
+                        moneySpent = moneySpent + player24.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Henderson")
+                    {
+                        moneyRemaining = moneyRemaining - player25.playerCost;
+                        moneySpent = moneySpent + player25.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Kmet")
+                    {
+                        moneyRemaining = moneyRemaining - player26.playerCost;
+                        moneySpent = moneySpent + player26.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Hopkins")
+                    {
+                        moneyRemaining = moneyRemaining - player27.playerCost;
+                        moneySpent = moneySpent + player27.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Bryant")
+                    {
+                        moneyRemaining = moneyRemaining - player28.playerCost;
+                        moneySpent = moneySpent + player28.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Pinkney")
+                    {
+                        moneyRemaining = moneyRemaining - player29.playerCost;
+                        moneySpent = moneySpent + player29.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Breeland")
+                    {
+                        moneyRemaining = moneyRemaining - player30.playerCost;
+                        moneySpent = moneySpent + player30.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Simmons")
+                    {
+                        moneyRemaining = moneyRemaining - player31.playerCost;
+                        moneySpent = moneySpent + player31.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Murray")
+                    {
+                        moneyRemaining = moneyRemaining - player32.playerCost;
+                        moneySpent = moneySpent + player32.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Baun")
+                    {
+                        moneyRemaining = moneyRemaining - player33.playerCost;
+                        moneySpent = moneySpent + player33.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Davis-Gaither" | name == "Gaither" | name == "Davis")
+                    {
+                        moneyRemaining = moneyRemaining - player34.playerCost;
+                        moneySpent = moneySpent + player34.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Dye")
+                    {
+                        moneyRemaining = moneyRemaining - player35.playerCost;
+                        moneySpent = moneySpent + player35.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Wills Jr." | name == "Wills")
+                    {
+                        moneyRemaining = moneyRemaining - player36.playerCost;
+                        moneySpent = moneySpent + player36.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Thomas")
+                    {
+                        moneyRemaining = moneyRemaining - player37.playerCost;
+                        moneySpent = moneySpent + player37.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Wirfs")
+                    {
+                        moneyRemaining = moneyRemaining - player38.playerCost;
+                        moneySpent = moneySpent + player38.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Bladasz")
+                    {
+                        moneyRemaining = moneyRemaining - player39.playerCost;
+                        moneySpent = moneySpent + player39.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "Becton")
+                    {
+                        moneyRemaining = moneyRemaining - player40.playerCost;
+                        moneySpent = moneySpent + player40.playerCost;
+                        Console.WriteLine($"You have {moneyRemaining.ToString("C0", CultureInfo.CurrentCulture)} remaining");
+                    }
+                    else if (name == "")
+                    {
+
+                    }
+                    else if (name == "quit" | name == "exit")
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, your input does not meet the set requirements. Please enter the last name of the player.");
+                    }
+                }else if (moneyRemaining < 10000100)
                 {
-                    moneyRemaining = moneyRemaining - player2.playerCost;
-                }
-                else if (name == "Herbert")
-                {
-                    moneyRemaining = moneyRemaining - player3.playerCost;
-                }
-                else if (name == "Love")
-                {
-                    moneyRemaining = moneyRemaining - player4.playerCost;
-                }
-                else if (name == "Fromm")
-                {
-                    moneyRemaining = moneyRemaining - player5.playerCost;
-                }
-                else if (name == "Swift")
-                {
-                    moneyRemaining = moneyRemaining - player6.playerCost;
-                }
-                else if (name == "Taylor")
-                {
-                    moneyRemaining = moneyRemaining - player7.playerCost;
-                }
-                else if (name == "Dobbins")
-                {
-                    moneyRemaining = moneyRemaining - player8.playerCost;
-                }
-                else if (name == "Moss")
-                {
-                    moneyRemaining = moneyRemaining - player9.playerCost;
-                }
-                else if (name == "Akers")
-                {
-                    moneyRemaining = moneyRemaining - player10.playerCost;
-                }
-                else if (name == "Lamb")
-                {
-                    moneyRemaining = moneyRemaining - player11.playerCost;
-                }
-                else if (name == "Jeudy")
-                {
-                    moneyRemaining = moneyRemaining - player12.playerCost;
-                }
-                else if (name == "Higgins")
-                {
-                    moneyRemaining = moneyRemaining - player13.playerCost;
-                }
-                else if (name == "Ruggs" | name== "Ruggs III")
-                {
-                    moneyRemaining = moneyRemaining - player14.playerCost;
-                }
-                else if (name == "Johnson")
-                {
-                    moneyRemaining = moneyRemaining - player15.playerCost;
-                }
-                else if (name == "Young")
-                {
-                    moneyRemaining = moneyRemaining - player16.playerCost;
-                }
-                else if (name == "Brown")
-                {
-                    moneyRemaining = moneyRemaining - player17.playerCost;
-                }
-                else if (name == "Epensa")
-                {
-                    moneyRemaining = moneyRemaining - player18.playerCost;
-                }
-                else if (name == "Kinlaw")
-                {
-                    moneyRemaining = moneyRemaining - player19.playerCost;
-                }
-                else if (name == "Gross-Matos" | name == "Matos" |name == "Gross")
-                {
-                    moneyRemaining = moneyRemaining - player20.playerCost;
-                }
-                else if (name == "Okudah")
-                {
-                    moneyRemaining = moneyRemaining - player21.playerCost;
-                }
-                else if (name == "Delpit")
-                {
-                    moneyRemaining = moneyRemaining - player22.playerCost;
-                }
-                else if (name == "Fulton")
-                {
-                    moneyRemaining = moneyRemaining - player23.playerCost;
-                }
-                else if (name == "McKinney")
-                {
-                    moneyRemaining = moneyRemaining - player24.playerCost;
-                }
-                else if (name == "Henderson")
-                {
-                    moneyRemaining = moneyRemaining - player25.playerCost;
-                }
-                else if (name == "Kmet")
-                {
-                    moneyRemaining = moneyRemaining - player26.playerCost;
-                }
-                else if (name == "Hopkins")
-                {
-                    moneyRemaining = moneyRemaining - player27.playerCost;
-                }
-                else if (name == "Bryant")
-                {
-                    moneyRemaining = moneyRemaining - player28.playerCost;
-                }
-                else if (name == "Pinkney")
-                {
-                    moneyRemaining = moneyRemaining - player29.playerCost;
-                }
-                else if (name == "Breeland")
-                {
-                    moneyRemaining = moneyRemaining - player30.playerCost;
-                }
-                else if (name == "Simmons")
-                {
-                    moneyRemaining = moneyRemaining - player31.playerCost;
-                }
-                else if (name == "Murray")
-                {
-                    moneyRemaining = moneyRemaining - player32.playerCost;
-                }
-                else if (name == "Baun")
-                {
-                    moneyRemaining = moneyRemaining - player33.playerCost;
-                }
-                else if (name == "Davis-Gaither" | name == "Gaither" | name == "Davis")
-                {
-                    moneyRemaining = moneyRemaining - player34.playerCost;
-                }
-                else if (name == "Dye")
-                {
-                    moneyRemaining = moneyRemaining - player35.playerCost;
-                }
-                else if (name == "Wills Jr." | name == "Wills")
-                {
-                    moneyRemaining = moneyRemaining - player36.playerCost;
-                }
-                else if (name == "Thomas")
-                {
-                    moneyRemaining = moneyRemaining - player37.playerCost;
-                }
-                else if (name == "Wirfs")
-                {
-                    moneyRemaining = moneyRemaining - player38.playerCost;
-                }
-                else if (name == "Bladasz")
-                {
-                    moneyRemaining = moneyRemaining - player39.playerCost;
-                }
-                else if (name == "Becton")
-                {
-                    moneyRemaining = moneyRemaining - player40.playerCost;
-                }
-                else
-                {
-                    Console.WriteLine("Sorry, your input does not meet the set requirements. Please enter the last name of the player.");
+                    Console.WriteLine("Sorry, you have exceeded the limit.");
                 }
 
-            }
+                Console.WriteLine("");
 
-            Console.WriteLine(formattedMoneyRemaining);
-            
+            } 
+
+            Console.WriteLine($"You spent {moneySpent.ToString("C0", CultureInfo.CurrentCulture)}");
+            Console.WriteLine("\n");
 
         }
     }
